@@ -78,10 +78,3 @@
 .print-force-new-page {
   page-break-before: always;
 }
-@layer utilities {
-  @media print {
-    .print\\:hidden {
-      display: none;
-    }
-  }
-}
