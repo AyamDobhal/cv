@@ -86,7 +86,24 @@
   }
 
   
-  * {
+
+  
+  #card {
+    background-color: white !important; 
+    color: black !important; 
+  }
+
+  #education {
+    background-color: white !important; 
+    color: black !important; 
+  }
+
+
+  #skills {
+    @apply bg-gray-300
+  }
+  
+  #project {
     background-color: white !important; 
     color: black !important; 
   }
