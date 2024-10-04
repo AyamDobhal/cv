@@ -108,8 +108,5 @@
     color: black !important; 
   }
 
-  /* Hide elements not needed in print */
-  .no-print {
-    display: none;
-  }
+
 }
