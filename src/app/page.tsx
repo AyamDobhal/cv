@@ -8,7 +8,6 @@ import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Metadata } from "next";
-import  Header  from "../components/Header/Header";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -131,7 +130,7 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs print:text-[10px] py-4">
+                <CardContent className="mt-2 py-4 text-xs print:text-[10px]">
                   {work.description}
                 </CardContent>
               </Card>
@@ -161,7 +160,7 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2  className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return (
@@ -173,13 +172,35 @@ export default function Page() {
           </div>
         </Section>
 
+        <Section>
+          <h2 className="text-xl font-bold">Achievements</h2>
+          {RESUME_DATA.achievements.map((achievement) => {
+            return (
+              <Card id="card" key={achievement.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      {achievement.title}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {achievement.during}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2 py-4 text-xs print:text-[10px]">
+                  {achievement.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3" >
+          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
                 <ProjectCard
-                  
                   key={project.title}
                   title={project.title}
                   description={project.description}

@@ -84,6 +84,13 @@ export const RESUME_DATA = {
     "Node.js",
     "GraphQL",
   ],
+  achievements: [
+    {
+      title: "Unfold24 by CoinDCX",
+      description: "Won 1st prize bounty worth US$5k for the Agoric path.",
+      during: "Dec 2024",
+    },
+  ],
   projects: [
     {
       title: "yt-yapper",
