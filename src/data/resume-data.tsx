@@ -86,6 +86,38 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "yt-yapper",
+      techStack: [
+        "Personal Project",
+        "Rust",
+        "yt-dlp",
+        "serenity-rs",
+        "songbird-rs",
+      ],
+      description:
+        "A Discord bot to play music in voice channels using yt-dlp.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/GamyingOnline/yt-yapper",
+      },
+    },
+    {
+      title: "TipFluence",
+      techStack: [
+        "Hackathon Project",
+        "Flutter",
+        "Solidity",
+        "TypeScript",
+        "Polygon",
+      ],
+      description:
+        "An Android/iOS application to secure content ownership rights of social media posts running in an EVM environment.",
+      link: {
+        label: "github.com",
+        href: "https://github.com/mehuldadlani/TipFluence",
+      },
+    },
+    {
       title: "Reddit CLI",
       techStack: [
         "School Project",
